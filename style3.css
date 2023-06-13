@@ -21,7 +21,7 @@ header {
 #logo{
   color: #b3f00b;
   font-size: 30px;
-  margin-left: 15px;
+  margin-left: 50px;
   position: sticky;
 }
 
@@ -174,3 +174,38 @@ h1{
           justify-content: space-evenly;
 
           }}
+
+
+          
+			@media only screen and (max-width: 300px) {
+        #container{
+          display: inline;
+          justify-content: space-evenly;
+          margin: -50px;
+        }}
+        @media only screen and (max-width: 300px) {
+          .text
+          {  
+            display: inline;
+            justify-content: space-evenly;
+            margin-right: -20px;
+          }}
+
+        @media only screen and (max-width: 300px) {
+          .textxy
+          {  
+            margin-right: -25px;
+            margin-left: 40px;
+            position: sticky;
+          }}
+          @media only screen and (max-width: 300px) {
+            .listx{
+              margin-top: 80px;
+              position: sticky;
+              margin-bottom: 20px;
+            }
+            .list{
+            margin: 2px;
+            justify-content: space-evenly;
+  
+            }}
