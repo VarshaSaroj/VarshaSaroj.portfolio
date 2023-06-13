@@ -21,7 +21,8 @@ header {
 #logo{
   color: #b3f00b;
   font-size: 30px;
-  margin-left: 50px;
+  text-align: center;
+  margin-left: 10px;
   position: sticky;
 }
 
@@ -269,6 +270,13 @@ h1{
                             position: sticky;
                           }}
                         @media only screen and (max-width: 360px) {
+                                  
+                            a.x{
+                            margin:5px;
+                            justify-content: space-evenly;
+                            margin-right: 10px;
+                            margin-left: 20px;
+                            }
                           .listx{
                             margin-top: 80px;
                             position: sticky;
@@ -399,19 +407,29 @@ h1{
                     
                               }}
 
-                              @media only screen and (max-width:712px ) {
-                                .listx{
-                                  margin-top: 80px;
-                                  position: sticky;
-                                  margin-bottom: 20px;
-                                }
-                                .list{
-                                margin:-5px;
-                                justify-content: space-evenly;
-                                margin-right: 15px;
-                                margin-left: -50px;
-                      
-                                }}
+                             
+                                @media only screen and (max-width:393px ) {
+                                  
+                                  li.list{
+                                    padding: 10px;
+                                  }
+                                  
+                                  .list{
+                                  justify-content: space-evenly;
+                                  margin-left:0.5px;
+                                  
+                        
+                                  }}
+                                  @media only screen and (max-width:353px ) {
+                                  
+                                    a.x{
+                                    margin:5px;
+                                    justify-content: space-evenly;
+                                    margin-right: 10px;
+                                    margin-left: 20px;
+                                    }
+                                    
+                                    }
                                 @media only screen and (max-width: 600px) {
                                   .listx{
                                     margin-top: 80px;
@@ -470,7 +488,28 @@ h1{
                                 margin-left: -50px;
                       
                                 }}
-
+                             
+                                  @media only screen and (max-width:712px ) {
+                                    ul li{
+                                      width: 50px;
+                                    }
+                                    .list{
+                                    justify-content: space-evenly;
+                                    margin-left:0.5px;
+                                    
+                          
+                                    }}
+                                    @media only screen and (max-width:414px ) {
+                                      li.list{
+                                        padding: 10px;
+                                      }
+                                      .list{
+                                      justify-content: space-evenly;
+                                      margin-left:0.5px;
+                                      
+                            
+                                      }}
+  
                                 @media only screen and (max-width: 912px) { 
                                   #container{
                                     display: inline;
@@ -562,3 +601,29 @@ h1{
                                     justify-content: space-evenly;
                           
                                     }}
+                                    @media only screen and (max-width:240px ) {
+                                      .listx{
+                                        margin-top: 80px;
+                                        position: sticky;
+                                        margin-bottom: 20px;
+                                      }
+                                      .list{
+                                      margin:-5px;
+                                      justify-content: space-evenly;
+                                      margin-right: 20px;
+                                      margin-left: -70px;
+                            
+                                      }}
+                                      @media only screen and (max-width:360px ) {
+                                        .listx{
+                                          margin-top: 80px;
+                                          position: sticky;
+                                          margin-bottom: 20px;
+                                        }
+                                        .list{
+                                        margin:-5px;
+                                        justify-content: space-evenly;
+                                        margin-right: 30px;
+                                        margin-left: -70px;
+                              
+                                        }}
