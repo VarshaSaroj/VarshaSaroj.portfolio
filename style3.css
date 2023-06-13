@@ -568,6 +568,18 @@ h1{
                                 margin-right: 30px;
                                 margin-left: -70px;
                               }}
+                              @media only screen and (max-width:390px ) {
+                                .listx{
+                                  margin-top: 80px;
+                                  position: sticky;
+                                  margin-bottom: 20px;
+                                }
+                                .list{
+                                  margin:-5px;
+                                  justify-content: space-evenly;
+                                  margin-right: 30px;
+                                  margin-left: -70px;
+                                }}
 
                               @media only screen and (max-width: 1024px) { 
                                 #container{
