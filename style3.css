@@ -46,7 +46,15 @@ a {
   
 }
 #z{
-  color: #333;
+  font-family: 'Courier New';
+  display: block;
+  text-align: center;
+  background-color: #333;
+  font-size: 16px;
+}
+#z:hover{
+  color: #b3f00b;
+
 }
 .x{
   padding-bottom: 5px;
@@ -58,7 +66,6 @@ section {
 }
 
 h1,h2 {
-  text-decoration: underline;
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -100,15 +107,18 @@ footer {
   margin-left: 430px;
   position: sticky;
 }
+h4{
+  color: #867e7e;
+}
 .text{
 display: inline;
 justify-content: space-evenly;
   margin: 60px;
 }
 #p{
+  color: #867e7e;
 text-align: center;
 }
-
 @media only screen and (max-width: 620px) {
 /* For mobile phones: */
 .project,h2,section,header,body,
@@ -270,6 +280,23 @@ h1{
                           margin-right: 15px;
                 
                           }}
+                          @media only screen and (max-width: 375px) {
+                            
+                          
+                            .listx{
+                              margin-top: 80px;
+                              position: sticky;
+                              margin-bottom: 20px;
+                            }
+                            .list{
+                            margin: 2px;
+                            justify-content: space-evenly;
+                  
+                            }
+                          
+                          
+                          
+                          }
 
                         @media only screen and (max-width: 414px) { 
                           #container{
