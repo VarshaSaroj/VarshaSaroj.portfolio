@@ -1,282 +1,268 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  box-sizing: border-box;
-}
-h1{
-  font-size: 38px;
-  text-align: center;
-  margin-top:10px;
-}
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-}
-
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  h1{
+    font-size: 38px;
+    text-align: center;
+    margin-top:10px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+/* Header background and text color */
 header {
   background-color: #333;
   color: #fff;
 }
-#logo{
+
+/* Logo styling - Do not apply hover effects on this */
+#logo {
   color: #b3f00b;
   font-size: 30px;
   text-align: center;
   margin-left: 10px;
   position: sticky;
+  top: 0; /* Ensure it stays at the top */
+  text-decoration: none; /* Ensure no underline on logo */
 }
 
+/* Basic styling for the unordered list */
 ul {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
-
+  padding: 0;
+  margin: 0;
 }
-.listx{
+
+/* List container styling */
+.listx {
   margin-top: 100px;
   position: sticky;
+  top: 0;
 }
-.list{
+
+/* List item styling */
+.list {
+  display: inline-block;  /* Use inline-block to allow scaling */
+  font-size: 20px;
+  margin-right: 70px;
+  transition: all 0.3s ease; /* Smooth transition for scaling, color, and underline */
+}
+
+/* Link styling for navigation (excluding logo) */
+.list a {
+  color: #fff;
+  text-decoration: none; /* Remove default underline */
+  display: inline-block; /* Allow scaling of the link itself */
+  transition: all 0.3s ease; /* Smooth transition for color, underline, and scaling */
+}
+
+/* Hover effect for links */
+.list a:hover {
+  color: #b3f00b; /* Change color on hover */
+  text-decoration: underline; /* Add underline on hover */
+  transform: scale(1.2); /* Enlarge the text on hover */
+  font-weight: bold; /* Optional: Make the text bold on hover */
+}
+
+  
+  #z{
+    font-family: 'Courier New';
+    display: block;
+    text-align: center;
+    background-color: #333;
+    font-size: 16px;
+  }
+  #z:hover{
+    color: #b3f00b;
+  
+  }
+  .x{
+    padding-bottom: 5px;
+    margin-right: 100px;
+  }
+  
+  section {
+    padding: 40px;
+  }
+  
+  h1,h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  ol{
+    text-align: left;
+    list-style: circle;
+  }
+  .project {
+    margin-bottom: 40px;
+  }
+  
+  .project h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align:center;
+    padding-top: 5px;
+  }
+  #container{
+    display: flex;
+    flex-direction: row;
+  }
+  .textxy
+  {  
+    margin: 60px;
+    margin-left: 430px;
+    position: sticky;
+  }
+  h4{
+    color: #867e7e;
+  }
+  .text{
   display: inline;
   justify-content: space-evenly;
-  margin-right: 70px;
-}
-a {
-  color: #fff;
-  text-decoration: none;
-  
-}
-#z{
-  font-family: 'Courier New';
-  display: block;
+    margin: 60px;
+  }
+  #p{
+    color: #867e7e;
   text-align: center;
-  background-color: #333;
-  font-size: 16px;
-}
-#z:hover{
-  color: #b3f00b;
-
-}
-.x{
-  padding-bottom: 5px;
-  margin-right: 100px;
-}
-
-section {
-  padding: 40px;
-}
-
-h1,h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-p {
-  text-align: left;
-  margin-bottom: 10px;
-}
-ol{
-  text-align: left;
-  list-style: circle;
-}
-.project {
-  margin-bottom: 40px;
-}
-
-.project h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.project p {
-  margin-bottom: 20px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align:center;
-  padding-top: 5px;
-}
-#container{
-  display: flex;
-  flex-direction: row;
-}
-.textxy
-{  
-  margin: 60px;
-  margin-left: 430px;
-  position: sticky;
-}
-h4{
-  color: #867e7e;
-}
-.text{
-display: inline;
-justify-content: space-evenly;
-  margin: 60px;
-}
-#p{
-  color: #867e7e;
-text-align: center;
-}
-@media only screen and (max-width: 620px) {
-/* For mobile phones: */
-.project,h2,section,header,body,
-.project h2, footer {
-  width: 100%;
-  font-size: 10px;
-}
-}
-@media only screen and (max-width: 620px) {
-ol{
-text-align: start;
-}
-}
-@media only screen and (max-width: 620px) {
-#p{
-  text-align: center;
-}
-}
-@media only screen and (max-width: 620px) {
-.x{
-  margin-right: 5px;
-  font-size: 10px;
-text-align: center;
-}
-} 
-@media only screen and (max-width: 620px) {
-h1{
-  font-size: 20px;
-}
-}
-@media only screen and (max-width: 620px) {
-  #logo{
-    font-size: 15px;
-    margin-left: 15px;
+  }
+  @media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .project,h2,section,header,body,
+  .project h2, footer {
+    width: 100%;
+    font-size: 10px;
   }
   }
   @media only screen and (max-width: 620px) {
-    .y{
-      width: 40px;
+  ol{
+  text-align: start;
+  }
+  }
+  @media only screen and (max-width: 620px) {
+  #p{
+    text-align: center;
+  }
+  }
+  @media only screen and (max-width: 620px) {
+  .x{
+    margin-right: 5px;
+    font-size: 10px;
+  text-align: center;
+  }
+  } 
+  @media only screen and (max-width: 620px) {
+  h1{
+    font-size: 20px;
+  }
+  }
+  @media only screen and (max-width: 620px) {
+    #logo{
+      font-size: 15px;
+      margin-left: 15px;
     }
     }
     @media only screen and (max-width: 620px) {
-      .text{
-        display: inline;
-        justify-content: space-evenly;
-        margin-right: 30px;
-      }}
+      .y{
+        width: 40px;
+      }
+      }
       @media only screen and (max-width: 620px) {
-        .textxy
-        {  
-          margin: 60px;
-          margin-left: 130px;
-          position: sticky;
+        .text{
+          display: inline;
+          justify-content: space-evenly;
+          margin-right: 30px;
         }}
         @media only screen and (max-width: 620px) {
-          .listx{
-            margin-top: 100px;
+          .textxy
+          {  
+            margin: 60px;
+            margin-left: 130px;
             position: sticky;
-            margin-bottom: 20px;
-          }
-          .list{
-          margin: 40px;
-          justify-content: space-evenly;
-
           }}
-            @media only screen and (max-width: 300px) { 
-              #container{
-                display: inline;
-                justify-content: space-evenly;
-                margin: -50px;
-              }}
-              @media only screen and (max-width: 300px) {
-                .text
-                {  
+          @media only screen and (max-width: 620px) {
+            .listx{
+              margin-top: 100px;
+              position: sticky;
+              margin-bottom: 20px;
+            }
+            .list{
+            margin: 40px;
+            justify-content: space-evenly;
+  
+            }}
+              @media only screen and (max-width: 300px) { 
+                #container{
                   display: inline;
                   justify-content: space-evenly;
-                  margin-right: -20px;
-                }}
-      
-              @media only screen and (max-width: 300px) {
-                .textxy
-                {  
-                  margin-right: -25px;
-                  margin-left: 40px;
-                  position: sticky;
+                  margin: -50px;
                 }}
                 @media only screen and (max-width: 300px) {
-                  .listx{
-                    margin-top: 80px;
-                    position: sticky;
-                    margin-bottom: 20px;
-                  }
-                  .list{
-                  margin: 2px;
-                  justify-content: space-evenly;
-        
+                  .text
+                  {  
+                    display: inline;
+                    justify-content: space-evenly;
+                    margin-right: -20px;
                   }}
-                  @media only screen and (max-width: 320px) { 
-                    #container{
-                      display: inline;
-                      justify-content: space-evenly;
-                      margin: -50px;
+        
+                @media only screen and (max-width: 300px) {
+                  .textxy
+                  {  
+                    margin-right: -25px;
+                    margin-left: 40px;
+                    position: sticky;
+                  }}
+                  @media only screen and (max-width: 300px) {
+                    .listx{
+                      margin-top: 80px;
+                      position: sticky;
+                      margin-bottom: 20px;
+                    }
+                    .list{
+                    margin: 2px;
+                    justify-content: space-evenly;
+          
                     }}
-                    @media only screen and (max-width: 320px) {
-                      .text
-                      {  
+                    @media only screen and (max-width: 320px) { 
+                      #container{
                         display: inline;
                         justify-content: space-evenly;
-                        margin-right: -20px;
-                      }}
-                    @media only screen and (max-width: 320px) {
-                      .textxy
-                      {  
-                        margin-right: -25px;
-                        margin-left: 40px;
-                        position: sticky;
+                        margin: -50px;
                       }}
                       @media only screen and (max-width: 320px) {
-                        .listx{
-                          margin-top: 80px;
-                          position: sticky;
-                          margin-bottom: 20px;
-                        }
-                        .list{
-                          padding: 25px;
-                        margin-left:-50px ;
-                        margin-right: 15px;
-              
+                        .text
+                        {  
+                          display: inline;
+                          justify-content: space-evenly;
+                          margin-right: -20px;
                         }}
-                        @media only screen and (max-width: 360px) { 
-                          #container{
-                            display: inline;
-                            justify-content: space-evenly;
-                            margin: -50px;
-                          }}
-                        @media only screen and (max-width: 360px) {
-                          .text
-                          {  
-                            display: inline;
-                            justify-content: space-evenly;
-                            margin-right: -20px;
-                          }}
-                        @media only screen and (max-width: 360px) {
-                          .textxy
-                          {  
-                            margin-right: -25px;
-                            margin-left: 40px;
-                            position: sticky;
-                          }}
-                        @media only screen and (max-width: 360px) {
-                                  
-                            a.x{
-                            margin:5px;
-                            justify-content: space-evenly;
-                            margin-right: 10px;
-                            margin-left: 20px;
-                            }
+                      @media only screen and (max-width: 320px) {
+                        .textxy
+                        {  
+                          margin-right: -25px;
+                          margin-left: 40px;
+                          position: sticky;
+                        }}
+                        @media only screen and (max-width: 320px) {
                           .listx{
                             margin-top: 80px;
                             position: sticky;
@@ -288,220 +274,249 @@ h1{
                           margin-right: 15px;
                 
                           }}
-                          @media only screen and (max-width: 375px) {
-                            
-                          
+                          @media only screen and (max-width: 360px) { 
+                            #container{
+                              display: inline;
+                              justify-content: space-evenly;
+                              margin: -50px;
+                            }}
+                          @media only screen and (max-width: 360px) {
+                            .text
+                            {  
+                              display: inline;
+                              justify-content: space-evenly;
+                              margin-right: -20px;
+                            }}
+                          @media only screen and (max-width: 360px) {
+                            .textxy
+                            {  
+                              margin-right: -25px;
+                              margin-left: 40px;
+                              position: sticky;
+                            }}
+                          @media only screen and (max-width: 360px) {
+                                    
+                              a.x{
+                              margin:5px;
+                              justify-content: space-evenly;
+                              margin-right: 10px;
+                              margin-left: 20px;
+                              }
                             .listx{
                               margin-top: 80px;
                               position: sticky;
                               margin-bottom: 20px;
                             }
                             .list{
-                            margin: 2px;
-                            justify-content: space-evenly;
+                              padding: 25px;
+                            margin-left:-50px ;
+                            margin-right: 15px;
                   
+                            }}
+                            @media only screen and (max-width: 375px) {
+                              
+                            
+                              .listx{
+                                margin-top: 80px;
+                                position: sticky;
+                                margin-bottom: 20px;
+                              }
+                              .list{
+                              margin: 2px;
+                              justify-content: space-evenly;
+                    
+                              }
+                            
+                            
+                            
                             }
-                          
-                          
-                          
-                          }
-
-                        @media only screen and (max-width: 414px) { 
-                          #container{
-                            display: inline;
-                            justify-content: space-evenly;
-                            margin: -50px;
-                          }}
-                          @media only screen and (max-width:414px ) {
-                            .text
-                            {  
+  
+                          @media only screen and (max-width: 414px) { 
+                            #container{
                               display: inline;
                               justify-content: space-evenly;
-                              margin-right: -20px;
-                            }}
-                  
-                          @media only screen and (max-width: 414px) {
-                            .textxy
-                            {  
-                              margin-right: -25px;
-                              margin-left: 40px;
-                              position: sticky;
+                              margin: -50px;
                             }}
                             @media only screen and (max-width:414px ) {
-                              .listx{
-                                margin-top: 80px;
-                                position: sticky;
-                                margin-bottom: 20px;
-                              }
-                              .list{
-                              margin: 2px;
-                              justify-content: space-evenly;
-                    
+                              .text
+                              {  
+                                display: inline;
+                                justify-content: space-evenly;
+                                margin-right: -20px;
                               }}
-
-                              
-                        @media only screen and (max-width: 480px) { 
-                          #container{
-                            display: inline;
-                            justify-content: space-evenly;
-                            margin: -50px;
-                          }}
-                          @media only screen and (max-width:480px ) {
-                            .text
-                            {  
-                              display: inline;
-                              justify-content: space-evenly;
-                              margin-right: -20px;
-                            }}
-                  
-                          @media only screen and (max-width: 480px) {
-                            .textxy
-                            {  
-                              margin-right: -25px;
-                              margin-left: 40px;
-                              position: sticky;
-                            }}
-                            @media only screen and (max-width:480px ) {
-                              .listx{
-                                margin-top: 80px;
-                                position: sticky;
-                                margin-bottom: 20px;
-                              }
-                              .list{
-                              margin: 2px;
-                              justify-content: space-evenly;
                     
-                              }}
-
-                              
-                        @media only screen and (max-width: 800px) { 
-                          #container{
-                            display: inline;
-                            justify-content: space-evenly;
-                            margin: -50px;
-                          }}
-                          @media only screen and (max-width:800px ) {
-                            .text
-                            {  
-                              display: inline;
-                              justify-content: space-evenly;
-                              margin-right: -20px;
-                            }}
-                  
-                          @media only screen and (max-width: 800px) {
-                            .textxy
-                            {  
-                              margin-right: -25px;
-                              margin-left: 40px;
-                              position: sticky;
-                            }}
-                            @media only screen and (max-width:800px ) {
-                              .listx{
-                                margin-top: 80px;
+                            @media only screen and (max-width: 414px) {
+                              .textxy
+                              {  
+                                margin-right: -25px;
+                                margin-left: 40px;
                                 position: sticky;
-                                margin-bottom: 20px;
-                              }
-                              .list{
-                              margin: 2px;
-                              justify-content: space-evenly;
-                    
                               }}
-
-                             
-                                @media only screen and (max-width:393px ) {
-                                  
-                                  li.list{
-                                    padding: 10px;
-                                  }
-                                  
-                                  .list{
-                                  justify-content: space-evenly;
-                                  margin-left:0.5px;
-                                  
-                        
-                                  }}
-                                  @media only screen and (max-width:353px ) {
-                                  
-                                    a.x{
-                                    margin:5px;
-                                    justify-content: space-evenly;
-                                    margin-right: 10px;
-                                    margin-left: 20px;
-                                    }
-                                    
-                                    }
-                                @media only screen and (max-width: 600px) {
-                                  .listx{
-                                    margin-top: 80px;
-                                    position: sticky;
-                                    margin-bottom: 20px;
-                                  }
-                                  .list{
-                                    padding: 25px;
-                                  margin-left:-50px ;
-                                  margin-right: 15px;
-                        
-                                  }}
-                                         
-                        @media only screen and (max-width: 820px) { 
-                          #container{
-                            display: inline;
-                            justify-content: space-evenly;
-                            margin: -50px;
-                          }}
-                          @media only screen and (max-width:820px ) {
-                            .text
-                            {  
-                              display: inline;
-                              justify-content: space-evenly;
-                              margin-right: -20px;
-                            }}
-                  
-                          @media only screen and (max-width: 820px) {
-                            .textxy
-                            {  
-                              margin-right: -25px;
-                              margin-left: 40px;
-                              position: sticky;
-                            }}
-                            @media only screen and (max-width:820px ) {
-                              .listx{
-                                margin-top: 80px;
-                                position: sticky;
-                                margin-bottom: 20px;
-                              }
-                              .list{
-                              margin: 2px;
-                              justify-content: space-evenly;
-                    
-                              }}
-                              @media only screen and (max-width:768px ) {
+                              @media only screen and (max-width:414px ) {
                                 .listx{
                                   margin-top: 80px;
                                   position: sticky;
                                   margin-bottom: 20px;
                                 }
                                 .list{
-                                margin:-5px;
+                                margin: 2px;
                                 justify-content: space-evenly;
-                                margin-right: 15px;
-                                margin-left: -50px;
                       
                                 }}
-                             
-                                  @media only screen and (max-width:712px ) {
-                                    ul li{
-                                      width: 50px;
+  
+                                
+                          @media only screen and (max-width: 480px) { 
+                            #container{
+                              display: inline;
+                              justify-content: space-evenly;
+                              margin: -50px;
+                            }}
+                            @media only screen and (max-width:480px ) {
+                              .text
+                              {  
+                                display: inline;
+                                justify-content: space-evenly;
+                                margin-right: -20px;
+                              }}
+                    
+                            @media only screen and (max-width: 480px) {
+                              .textxy
+                              {  
+                                margin-right: -25px;
+                                margin-left: 40px;
+                                position: sticky;
+                              }}
+                              @media only screen and (max-width:480px ) {
+                                .listx{
+                                  margin-top: 80px;
+                                  position: sticky;
+                                  margin-bottom: 20px;
+                                }
+                                .list{
+                                margin: 2px;
+                                justify-content: space-evenly;
+                      
+                                }}
+  
+                                
+                          @media only screen and (max-width: 800px) { 
+                            #container{
+                              display: inline;
+                              justify-content: space-evenly;
+                              margin: -50px;
+                            }}
+                            @media only screen and (max-width:800px ) {
+                              .text
+                              {  
+                                display: inline;
+                                justify-content: space-evenly;
+                                margin-right: -20px;
+                              }}
+                    
+                            @media only screen and (max-width: 800px) {
+                              .textxy
+                              {  
+                                margin-right: -25px;
+                                margin-left: 40px;
+                                position: sticky;
+                              }}
+                              @media only screen and (max-width:800px ) {
+                                .listx{
+                                  margin-top: 80px;
+                                  position: sticky;
+                                  margin-bottom: 20px;
+                                }
+                                .list{
+                                margin: 2px;
+                                justify-content: space-evenly;
+                      
+                                }}
+  
+                               
+                                  @media only screen and (max-width:393px ) {
+                                    
+                                    li.list{
+                                      padding: 10px;
                                     }
+                                    
                                     .list{
                                     justify-content: space-evenly;
                                     margin-left:0.5px;
                                     
                           
                                     }}
-                                    @media only screen and (max-width:414px ) {
-                                      li.list{
-                                        padding: 10px;
+                                    @media only screen and (max-width:353px ) {
+                                    
+                                      a.x{
+                                      margin:5px;
+                                      justify-content: space-evenly;
+                                      margin-right: 10px;
+                                      margin-left: 20px;
+                                      }
+                                      
+                                      }
+                                  @media only screen and (max-width: 600px) {
+                                    .listx{
+                                      margin-top: 80px;
+                                      position: sticky;
+                                      margin-bottom: 20px;
+                                    }
+                                    .list{
+                                      padding: 25px;
+                                    margin-left:-50px ;
+                                    margin-right: 15px;
+                          
+                                    }}
+                                           
+                          @media only screen and (max-width: 820px) { 
+                            #container{
+                              display: inline;
+                              justify-content: space-evenly;
+                              margin: -50px;
+                            }}
+                            @media only screen and (max-width:820px ) {
+                              .text
+                              {  
+                                display: inline;
+                                justify-content: space-evenly;
+                                margin-right: -20px;
+                              }}
+                    
+                            @media only screen and (max-width: 820px) {
+                              .textxy
+                              {  
+                                margin-right: -25px;
+                                margin-left: 40px;
+                                position: sticky;
+                              }}
+                              @media only screen and (max-width:820px ) {
+                                .listx{
+                                  margin-top: 80px;
+                                  position: sticky;
+                                  margin-bottom: 20px;
+                                }
+                                .list{
+                                margin: 2px;
+                                justify-content: space-evenly;
+                      
+                                }}
+                                @media only screen and (max-width:768px ) {
+                                  .listx{
+                                    margin-top: 80px;
+                                    position: sticky;
+                                    margin-bottom: 20px;
+                                  }
+                                  .list{
+                                  margin:-5px;
+                                  justify-content: space-evenly;
+                                  margin-right: 15px;
+                                  margin-left: -50px;
+                        
+                                  }}
+                               
+                                    @media only screen and (max-width:712px ) {
+                                      ul li{
+                                        width: 50px;
                                       }
                                       .list{
                                       justify-content: space-evenly;
@@ -509,66 +524,64 @@ h1{
                                       
                             
                                       }}
-  
-                                @media only screen and (max-width: 912px) { 
-                                  #container{
-                                    display: inline;
-                                    justify-content: space-evenly;
-                                    margin: -50px;
-                                  }}
-                                  @media only screen and (max-width:912px ) {
-                                    .text
-                                    {  
+                                      @media only screen and (max-width:414px ) {
+                                        li.list{
+                                          padding: 10px;
+                                        }
+                                        .list{
+                                        justify-content: space-evenly;
+                                        margin-left:0.5px;
+                                        
+                              
+                                        }}
+    
+                                  @media only screen and (max-width: 912px) { 
+                                    #container{
                                       display: inline;
                                       justify-content: space-evenly;
-                                      margin-right: -20px;
-                                    }}
-                          
-                                  @media only screen and (max-width: 912px) {
-                                    .textxy
-                                    {  
-                                      margin-right: -25px;
-                                      margin-left: 40px;
-                                      position: sticky;
+                                      margin: -50px;
                                     }}
                                     @media only screen and (max-width:912px ) {
-                                      .listx{
-                                        margin-top: 80px;
-                                        position: sticky;
-                                        margin-bottom: 20px;
-                                      }
-                                      .list{
-                                      margin: 2px;
-                                      justify-content: space-evenly;
-                            
+                                      .text
+                                      {  
+                                        display: inline;
+                                        justify-content: space-evenly;
+                                        margin-right: -20px;
                                       }}
-                                      @media only screen and (max-width:280px ) {
+                            
+                                    @media only screen and (max-width: 912px) {
+                                      .textxy
+                                      {  
+                                        margin-right: -25px;
+                                        margin-left: 40px;
+                                        position: sticky;
+                                      }}
+                                      @media only screen and (max-width:912px ) {
                                         .listx{
                                           margin-top: 80px;
                                           position: sticky;
                                           margin-bottom: 20px;
                                         }
                                         .list{
-                                        margin:-5px;
+                                        margin: 2px;
                                         justify-content: space-evenly;
-                                        margin-right: 30px;
-                                        margin-left: -70px;
                               
                                         }}
-                                        
-                            @media only screen and (max-width:412px ) {
-                              .listx{
-                                margin-top: 80px;
-                                position: sticky;
-                                margin-bottom: 20px;
-                              }
-                              .list{
-                                margin:-5px;
-                                justify-content: space-evenly;
-                                margin-right: 30px;
-                                margin-left: -70px;
-                              }}
-                              @media only screen and (max-width:390px ) {
+                                        @media only screen and (max-width:280px ) {
+                                          .listx{
+                                            margin-top: 80px;
+                                            position: sticky;
+                                            margin-bottom: 20px;
+                                          }
+                                          .list{
+                                          margin:-5px;
+                                          justify-content: space-evenly;
+                                          margin-right: 30px;
+                                          margin-left: -70px;
+                                
+                                          }}
+                                          
+                              @media only screen and (max-width:412px ) {
                                 .listx{
                                   margin-top: 80px;
                                   position: sticky;
@@ -580,53 +593,52 @@ h1{
                                   margin-right: 30px;
                                   margin-left: -70px;
                                 }}
-
-                              @media only screen and (max-width: 1024px) { 
-                                #container{
-                                  display: inline;
-                                  justify-content: space-evenly;
-                                  margin: -50px;
-                                }}
-                                @media only screen and (max-width:1024px ) {
-                                  .text
-                                  {  
+                                @media only screen and (max-width:390px ) {
+                                  .listx{
+                                    margin-top: 80px;
+                                    position: sticky;
+                                    margin-bottom: 20px;
+                                  }
+                                  .list{
+                                    margin:-5px;
+                                    justify-content: space-evenly;
+                                    margin-right: 30px;
+                                    margin-left: -70px;
+                                  }}
+  
+                                @media only screen and (max-width: 1024px) { 
+                                  #container{
                                     display: inline;
                                     justify-content: space-evenly;
-                                    margin-right: -20px;
-                                  }}
-                        
-                                @media only screen and (max-width: 1024px) {
-                                  .textxy
-                                  {  
-                                    margin-right: -25px;
-                                    margin-left: 40px;
-                                    position: sticky;
+                                    margin: -50px;
                                   }}
                                   @media only screen and (max-width:1024px ) {
-                                    .listx{
-                                      margin-top: 80px;
-                                      position: sticky;
-                                      margin-bottom: 20px;
-                                    }
-                                    .list{
-                                    margin: 2px;
-                                    justify-content: space-evenly;
-                          
+                                    .text
+                                    {  
+                                      display: inline;
+                                      justify-content: space-evenly;
+                                      margin-right: -20px;
                                     }}
-                                    @media only screen and (max-width:240px ) {
+                          
+                                  @media only screen and (max-width: 1024px) {
+                                    .textxy
+                                    {  
+                                      margin-right: -25px;
+                                      margin-left: 40px;
+                                      position: sticky;
+                                    }}
+                                    @media only screen and (max-width:1024px ) {
                                       .listx{
                                         margin-top: 80px;
                                         position: sticky;
                                         margin-bottom: 20px;
                                       }
                                       .list{
-                                      margin:-5px;
+                                      margin: 2px;
                                       justify-content: space-evenly;
-                                      margin-right: 20px;
-                                      margin-left: -70px;
                             
                                       }}
-                                      @media only screen and (max-width:360px ) {
+                                      @media only screen and (max-width:240px ) {
                                         .listx{
                                           margin-top: 80px;
                                           position: sticky;
@@ -635,7 +647,20 @@ h1{
                                         .list{
                                         margin:-5px;
                                         justify-content: space-evenly;
-                                        margin-right: 30px;
+                                        margin-right: 20px;
                                         margin-left: -70px;
                               
                                         }}
+                                        @media only screen and (max-width:360px ) {
+                                          .listx{
+                                            margin-top: 80px;
+                                            position: sticky;
+                                            margin-bottom: 20px;
+                                          }
+                                          .list{
+                                          margin:-5px;
+                                          justify-content: space-evenly;
+                                          margin-right: 30px;
+                                          margin-left: -70px;
+                                
+                                          }}
