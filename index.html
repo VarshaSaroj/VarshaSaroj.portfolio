@@ -1,116 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Navbar Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .navbar {
+      backdrop-filter: blur(30px);
+      box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+      border: 2px solid rgba(255, 255, 255, 0.18);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@Varshasaroj</title>
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      body {
+          background-color: #f8f9fa; /* Light Gray */
+          font-family: 'Roboto', sans-serif;
+      }
+      header {
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+      }
+      h1, h2, h3, .section-title, .card-title, .card-text {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+.navbar-brand, .nav-link {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    transform: scale(1.1); /* Scale up to 110% on hover */
+}
+h1:hover, h2:hover, h3:hover, .section-title:hover, .card-title:hover, .card-text:hover {
+    transform: scale(1.1); /* Scale up to 110% on hover */
+}
+      .navbar {
+          transition: background-color 0.5s ease;
+      }
+      .navbar.scrolled {
+          background-color: rgba(255, 255, 255, 0.9);
+      }
+      .section-title {
+          margin-top: 50px;
+          margin-bottom: 30px;
+          text-align: center;
+          font-size: 2.5rem;
+          color: #29588a; /* Bootstrap Blue */
+          background-color: #e9ecef; /* Light Gray */
+          padding: 10px;
+          border-radius: 5px;
+      }
+      .card {
+          transition: transform 0.3s;
+          background-color: #ffffff; /* White */
+      }
+      .card:hover .card-title,
+.card:hover .card-textx {
+    color: white; /* Change text color to white on hover */
+}
+      .card:hover {
+          transform: scale(1.05);
+          background: linear-gradient(to right, #007bff, #6c757d);/* Light Green on hover */
+      }
+      footer {
+          background-color: #343a40; /* Dark Gray */
+          color: white;
+          padding: 20px 0;
+      }
+      footer a {
+          color: #f8f9fa; /* Light Gray */
+      }
+      .social-icon {
+          transition: transform 0.3s;
+      }
+      .social-icon:hover {
+          transform: scale(1.1);
+      }
+      .hero {
+          background: linear-gradient(to right, #558cc7, #6c757d); /* Gradient from Bootstrap Blue to Gray */
+          height: 60vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          text-align: center;
+          position: relative;
+      }
+      .hero::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+      }
+      .hero h1 {
+          font-size: 3rem;
+          z-index: 1;
+      }
+      .hero p {
+          font-size: 1.5rem;
+          z-index: 1;
+      }
+      .animated-text {
+          opacity: 0; /* Start invisible */
+          transform: translateY(20px); /* Start slightly lower */
+          animation: fadeInUp 1s forwards; /* Apply animation */
+      }
+      @keyframes fadeInUp {
+          to {
+   opacity: 1; /* End fully visible */
+              transform: translateY(0); /* End at original position */
+          }
+      }
+      .animated-text:nth-child(1) {
+          animation-delay: 0.5s; /* Delay for the first line */
+      }
+      .animated-text:nth-child(2) {
+          animation-delay: 1s; /* Delay for the second line */
+      }
+      .btn {
+          background-color: #29588a; /* Custom button color */
+          color: white; /* Text color */
+      }
+      .btn:hover {
+          background-color: #1e3a5f; /* Darker shade for hover effect */
+          color: white; /* Keep text color white on hover */
+      }
+      .btn {
+    border: none; /* Remove border */
+}
+      #about {
+          background-image: url('about-bg.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          padding: 50px 0; /* Add padding for better spacing */
+      }
+      #education {
+          background-image: url('education-bg.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          padding: 50px 0; /* Add padding for better spacing */
+      }
+      #projects {
+          background-image: url('projects-bg.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          padding: 50px 0; /* Add padding for better spacing */
+      }
+      #accomplishments {
+          background-image: url('accomplishments-bg.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          padding: 50px 0; /* Add padding for better spacing */
+      }
+  </style>
 </head>
 <body>
-    <header >
-         <nav>
-            <ul>
-              <li class="listy"><a id="logo" href="dev">Devfolio</a></li>
-                   <div class="listx">
-                   <li class="list"><a class="x" href="#about">About</a></li>
-                   <li class="list"><a class="x" href="#education">Education</a></li>
-                   <li class="list"><a class="x" href="#projects">Projects</a></li>
-                   <li class="list"><a class="x" href="#Accomplishment">Accomplishments</a></li>
-             </div>
-            </ul>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id="logo" href="dev">Devfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#accomplishments">Accomplishments</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <h1>Varsha Saroj</h1>
-          <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Varsha Saroj, a passionate web developer with expertise in HTML, CSS, and JavaScript. Effective communicator, problem-solver, and team player exceeding client expectations. Committed to growth, innovation, and delivering high-quality solutions. I love creating beautiful and responsive websites that provide a great user experience.</p>
-            <p>My goal is to make a positive impact on the web by creating innovative and user-friendly websites.</p>
-          </section>
-        <section id="education">
-          <h2>Education</h2>
-          <img src="bhu-logo.jpg" alt="image">
-          <p><ol>
-            <li> Master of Science (MSc) in Computer Science, Banaras Hindu University (BHU)
 
-            Pursued from [2023] to [expected completion 2024]
-            Specialization: Computer Science
-            </li>
-           <li> Bachelor of Science (BSc) in Computer Science, Banaras Hindu University (BHU)
-            
-            Graduated in 2022
-            Major: Computer Science
-          </li>
-          </ol></p>
-        </section>
-        <section id="accomplishments">
-          <h2>Accomplishments</h2>
-      <ol>
-        <li>HTML</li>
-        <li>Python</li>
-        <li>Stereolithography</li>
-        <li>JavaScript</li>
-        <li>communication</li>
-        <li>Game using Python</li>
-        <li>Webscraping</li>
-      </ol><br>
+    <div class="hero">
+        <h1 class="animated-text">Welcome to My Portfolio</h1>
+        <p class="animated-text">Explore my work and skills as a web developer</p>
+    </div>
+
+    <section id="about" class="container my-5">
+        <h2 class="section-title">About Me</h2>
+        <p>Hi, I'm Varsha Saroj, a passionate web developer with expertise in HTML, CSS, and JavaScript. Effective communicator, problem-solver, and team player exceeding client expectations. Committed to growth, innovation, and delivering high-quality solutions. I love creating beautiful and responsive websites that provide a great user experience.</p>
+        <p>My goal is to make a positive impact on the web by creating innovative and user-friendly websites.</p>
+    </section>
+
+    <section id="education" class="container my-5">
+        <h2 class="section-title">Education</h2>
+        <img src="bhu-logo.jpg" alt="image" class="img-fluid mb-3">
+        <ol>
+            <li>Master of Science (MSc) in Computer Science, Banaras Hindu University (BHU) - Pursued from [2023] to [expected completion 2024]</li>
+            <li>Bachelor of Science (BSc) in Computer Science, Banaras Hindu University (BHU) - Graduated in 2022</li>
+        </ol>
+    </section>
+
+    <section id="accomplishments" class="container my-5">
+      <h2 class="section-title">Accomplishments</h2>
+      
       <h3>HTML/CSS</h3>
-      <ol style="list-style-type: none;">
-        <li>Developed responsive website layouts using HTML and CSS.</li>
-        <li>Implemented CSS animations to enhance user experience.</li>
-        <li>Created custom styles and layouts for various web projects.</li>
-      </ol><br>
+      <ul class="list-unstyled">
+          <li>Developed responsive website layouts using HTML and CSS.</li>
+          <li>Implemented CSS animations to enhance user experience.</li>
+          <li>Created custom styles and layouts for various web projects.</li>
+      </ul>
       
       <h3>Python</h3>
-      <ol style="list-style-type: none;">
-        <li>Developed Python applications for data analysis and processing.</li>
-        <li>Created web scraping scripts to extract data from websites.</li>
-        <li>Implemented algorithms and data structures using Python.</li>
-      </ol><br>
+      <ul class="list-unstyled">
+          <li>Developed Python applications for data analysis and processing.</li>
+          <li>Created web scraping scripts to extract data from websites.</li>
+          <li>Implemented algorithms and data structures using Python.</li>
+      </ul>
+      
+      <h3>Frontend Developer</h3>
+      <ul class="list-unstyled">
+          <li>Built interactive and responsive web applications using modern JavaScript frameworks.</li>
+          <li>Collaborated with designers to create user-friendly interfaces.</li>
+          <li>Optimized web applications for maximum speed and scalability.</li>
+      </ul>
+      
+      <h3>Cybersecurity Workshop</h3>
+      <ul class="list-unstyled">
+          <li>Participated in a comprehensive Cybersecurity Workshop at IIT Kanpur.</li>
+          <li>Learned about network security, ethical hacking, and data protection strategies.</li>
+          <li>Gained hands-on experience with security tools and techniques.</li>
+      </ul>
       
       <h3>Stereolithography Workshop</h3>
-      <ol style="list-style-type: none;">
-        <li>Successfully completed a Stereolithography workshop.</li>
-        <li>Gained expertise in using Stereolithography (3D printing) technology.</li>
-        <li>Produced high-quality 3D models using Stereolithography techniques.</li>
-      </ol>
-        </section>
-          <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project">
-              <h2>Project 1</h2>
-              <p><b>Its a team work </b>,We have created this game using Python v3.7
-                and its different modules , such as Pygame,
-                Tkinter, os, sys,csv ,mixer,button, random etc.
-                We have used Pycharm editor since it
-                provides an IDE, i.e. integrated development
-                environment and makes coding easier. We
-                have also used SQLite for our database. We
-                have made separate python files for the main
-                project, for login/registration page and for
-                instructions to increase modularity. All
-                images are non- copyrighted, and are from
-                Google. These images have been edited on
-                Canva and their background was removed
-                using remove.bg.</p>
-              <a id="z" href="e-sport.pdf">View Project</a>
-            </div>
-            <div class="project">
-              <h2>Project 2</h2>
-              <p><b>portfolio,</b>Embarking on a personal project that encapsulates my passion and showcases my creative journey has led me to create a captivating web portfolio. It serves as a testament to my artistic prowess, highlighting my skills, accomplishments, and unique perspective. In this enchanting endeavor, I have meticulously woven together design, functionality, and storytelling to create an immersive experience that invites visitors to delve into my world of creativity.</p>
-              <a id="z" href="https://varshasaroj.github.io/VarshaSaroj.portfolio/">View Project</a>
-            </div>
-          </section>
+      <ul class="list-unstyled">
+          <li>Successfully completed a Stereolithography Workshop at IIT BHU.</li>
+          <li>Gained expertise in using Stereolithography (3D printing) technology.</li>
+          <li>Produced high-quality 3D models using Stereolithography techniques.</li>
+      </ul>
+      
+      <h3>Current Internship</h3>
+      <ul class="list-unstyled">
+          <li>Currently interning at the Central Library, BHU.</li>
+          <li>Assisting in library management and digital resource organization.</li>
+          <li>Gaining experience in information retrieval and user support.</li>
+      </ul>
+  </section>
 
-    <hr>
-    <footer>
-        <h4>Contact me</h4><br> &nbsp;
-        <div id="container">
-<a class="textxy" href="https://github.com/VarshaSaroj"><img class="y" src="github-logo.png " alt="github-logo" width="60px"></a>
-<a class="text" href="https://www.linkedin.com/in/varsha-saroj-171a60229/ "><img class="y" src="li.png" alt="" width="60px"></a>
-<a class="text" href="mailto:varshasaroj692001@gmail.com"><img class="y" src="gmail-logo.jpg" alt="gmail-logo" width="60px"></a><br>&nbsp;
+<section id="projects" class="container my-5">
+    <div class="slide-in-left">
+        <h2 class="section-title">My Projects</h2>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-textx"><b>It's a team work</b>, we have created this game using Python v3.7 and its different modules, such as Pygame, Tkinter, os, sys, csv, mixer, button, random, etc. We have used Pycharm editor since it provides an IDE, i.e., integrated development environment and makes coding easier. We have also used SQLite for our database. We have made separate Python files for the main project, for login/registration page, and for instructions to increase modularity. All images are non-copyrighted, and are from Google. These images have been edited on Canva and their background was removed using remove.bg.</p>
+                <a href="e-s port.pdf" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-textx"><b>Portfolio</b>, embarking on a personal project that encapsulates my passion and showcases my creative journey has led me to create a captivating web portfolio. It serves as a testament to my artistic prowess, highlighting my skills, accomplishments, and unique perspective. In this enchanting endeavor, I have meticulously woven together design, functionality, and storytelling to create an immersive experience that invites visitors to delve into my world of creativity.</p>
+                <a href="https://varshasaroj.github.io/VarshaSaroj.portfolio/" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="bg-dark text-white text-center text-lg-start mt-5">
+        
+  <!-- Background Section with Navbar on Top -->
+  <!-- <div class="relative h-[250px] bg-cover bg-center" style="background-image: url('background.jpg');"> -->
+    <!-- Dark overlay -->
+    <!-- <div class="absolute inset-0 bg-black opacity-60 z-0"></div> -->
+
+    <!-- Navbar inside background -->
+<!--         -->
+  <!-- </div> -->
+<!-- Add this somewhere in your portfolio HTML -->
+<iframe src="https://varshasaroj.github.io/digital_clock/" width="100%" height="400px" style="border:none;"></iframe>
+
+  <!-- Profile Section: PULLED UP -->
+  <div class="relative -mt-16 flex flex-col items-center text-center text-white">
+    <img src="varshanav.jpg" alt="Profile"
+    class="w-40 h-40 rounded-full border-3 border-white shadow-xl object-cover object-[center_30%] bg-white">
+    <h1 class="text-xl font-bold text-black mt-3" style="color: white;">Varsha Saroj</h1>
+    <p class="text-sm text-gray-600" style="color: #ffffff;">Machine Learning Enthusiast</p>
+
+    <!-- Social Media Icons -->
+    <div class="flex gap-4 mt-2 text-black">
+      <a href="https://github.com/VarshaSaroj" class="hover:text-gray-800 transition"><i class="fab fa-github fa-lg"></i></a>
+      <a href="varshasaroj692001@gmail.com" class="hover:text-red-500 transition"><i class="fas fa-envelope fa-lg"></i></a>
+      <a href="https://www.linkedin.com/in/varsha-saroj-171a60229/" class="hover:text-blue-600 transition"><i class="fab fa-linkedin fa-lg"></i></a>
+    </div>
+  </div>
+  </div>
+  <p id="p">Designed and Developed by Varsha Saroj &copy; 2023</p>
 </div>
-<p id="p">Designed and Developed by Varsha Saroj &copy; 2023</p>
-    </footer>
-    
+</footer>
+
+<script>
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
+    });
+});
+</script>
+
 </body>
 </html>
