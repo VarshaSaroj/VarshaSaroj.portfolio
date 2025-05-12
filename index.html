@@ -1,5 +1,20 @@
-
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .navbar {
+      backdrop-filter: blur(30px);
+      box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+      border: 2px solid rgba(255, 255, 255, 0.18);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -245,7 +260,8 @@ h1:hover, h2:hover, h3:hover, .section-title:hover, .card-title:hover, .card-tex
       </ul>
   </section>
 
-    <section id="projects" class="container my-5">
+<section id="projects" class="container my-5">
+    <div class="slide-in-left">
         <h2 class="section-title">My Projects</h2>
         <div class="card mb-3">
             <div class="card-body">
@@ -261,40 +277,52 @@ h1:hover, h2:hover, h3:hover, .section-title:hover, .card-title:hover, .card-tex
                 <a href="https://varshasaroj.github.io/VarshaSaroj.portfolio/" class="btn btn-primary">View Project</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <hr>
     <footer class="bg-dark text-white text-center text-lg-start mt-5">
-        <div class="container p-4">
-            <h4>Contact Me</h4>
-            <div class="mb-3">
-                <a class="text-white mx-2" href="https://github.com/VarshaSaroj" title="GitHub">
-                    <img src="github-logo.png" alt="GitHub" width="60px" class="social-icon">
-                </a>
-                <a class="text-white mx-2" href="https://www.linkedin.com/in/varsha-saroj-171a60229/" title="LinkedIn">
-                    <img src="li.png" alt="LinkedIn" width="60px" class="social-icon">
-                </a>
-                <a class="text-white mx-2" href="mailto:varshasaroj692001@gmail.com" title="Email">
-                    <img src="gmail-logo.jpg" alt="Email" width="60px" class="social-icon">
-                </a>
-            </div>
-            <p id="p">Designed and Developed by Varsha Saroj &copy; 2023</p>
-        </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            <a class="text-white" href="#top">Back to Top</a>
-        </div>
-    </footer>
+        
+  <!-- Background Section with Navbar on Top -->
+  <!-- <div class="relative h-[250px] bg-cover bg-center" style="background-image: url('background.jpg');"> -->
+    <!-- Dark overlay -->
+    <!-- <div class="absolute inset-0 bg-black opacity-60 z-0"></div> -->
 
-    <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 50) {
-                    $('.navbar').addClass('scrolled');
-                } else {
-                    $('.navbar').removeClass('scrolled');
-                }
-            });
-        });
-    </script>
+    <!-- Navbar inside background -->
+<!--         -->
+  <!-- </div> -->
+<!-- Add this somewhere in your portfolio HTML -->
+<iframe src="https://varshasaroj.github.io/digital_clock/" width="100%" height="400px" style="border:none;"></iframe>
+
+  <!-- Profile Section: PULLED UP -->
+  <div class="relative -mt-16 flex flex-col items-center text-center text-white">
+    <img src="varshanav.jpg" alt="Profile"
+    class="w-40 h-40 rounded-full border-3 border-white shadow-xl object-cover object-[center_30%] bg-white">
+    <h1 class="text-xl font-bold text-black mt-3" style="color: white;">Varsha Saroj</h1>
+    <p class="text-sm text-gray-600" style="color: #ffffff;">Machine Learning Enthusiast</p>
+
+    <!-- Social Media Icons -->
+    <div class="flex gap-4 mt-2 text-black">
+      <a href="https://github.com/VarshaSaroj" class="hover:text-gray-800 transition"><i class="fab fa-github fa-lg"></i></a>
+      <a href="varshasaroj692001@gmail.com" class="hover:text-red-500 transition"><i class="fas fa-envelope fa-lg"></i></a>
+      <a href="https://www.linkedin.com/in/varsha-saroj-171a60229/" class="hover:text-blue-600 transition"><i class="fab fa-linkedin fa-lg"></i></a>
+    </div>
+  </div>
+  </div>
+  <p id="p">Designed and Developed by Varsha Saroj &copy; 2023</p>
+</div>
+</footer>
+
+<script>
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
+    });
+});
+</script>
+
 </body>
 </html>
