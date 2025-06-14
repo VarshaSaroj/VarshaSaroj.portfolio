@@ -74,6 +74,22 @@ h1:hover, h2:hover, h3:hover, .section-title:hover, .card-title:hover, .card-tex
 .card:hover .card-textx {
     color: white; /* Change text color to white on hover */
 }
+.responsive-iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30%; /* Adjust for height; try 30–40% */
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
       footer {
           background-color: #343a40; /* Dark Gray */
@@ -318,7 +334,10 @@ h1:hover, h2:hover, h3:hover, .section-title:hover, .card-title:hover, .card-tex
 
     <footer class="bg-dark text-white text-center text-lg-start mt-5">
 <!-- Add this somewhere in your portfolio HTML -->
-<iframe src="https://varshasaroj.github.io/digital_clock/" width="100%" height="400px" style="border:none;"></iframe>
+<div class="responsive-iframe-container">
+  <iframe src="https://varshasaroj.github.io/digital_clock/" allowfullscreen></iframe>
+</div>
+
 
   <!-- Profile Section: PULLED UP -->
   <div class="relative -mt-16 flex flex-col items-center text-center text-white">
