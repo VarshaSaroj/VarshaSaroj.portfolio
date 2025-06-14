@@ -1,7 +1,8 @@
   /* LinkedIn Badge Specific Styling */
 .linkedin-badge {
-    max-width: 320px;
-    border-radius: 12px;
+    width: 336px;
+    height: 326px;
+    border-radius: 8px;
     border: 1px solid #ddd;
     background-color: #ffffff;
     padding: 1rem;
@@ -17,6 +18,7 @@
     width: 90px;
 }
 
+
 .btn-view-profile {
     background-color: #29588a;
     color: white;
@@ -28,6 +30,18 @@
     background-color: #1e3a5f;
     color: white;
     transform: scale(1.05);
+}
+body {
+          background-color: #f8f9fa; /* Light Gray */
+          font-family: 'Roboto', sans-serif;
+      }
+      header {
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+      }
+      h1, h2, h3, .section-title, .card-title, .card-text {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
 .navbar-brand, .nav-link {
     transition: transform 0.3s ease; /* Smooth transition for scaling */
